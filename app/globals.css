@@ -22,3 +22,27 @@ body {
 .dashboard-card {
   z-index: -1;
 }
+
+
+/* width */
+#modal ::-webkit-scrollbar {
+  width: 5px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* Track */
+#modal ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+#modal ::-webkit-scrollbar-thumb {
+  background: #2c3e50;
+  border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+#modal ::-webkit-scrollbar-thumb:hover {
+  background: #2c3e50;
+}

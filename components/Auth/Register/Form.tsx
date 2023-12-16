@@ -1,23 +1,70 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Input from "@/components/Textarea/Input";
 import Password from "@/components/Textarea/Password";
 import Modal from "@/components/Modal";
 import AuthService from "@/app/api/AuthService";
 
-
 const RegisterForm: React.FC = () => {
-    const [registerContractValue, setRegisterContractValue] = useState(true);
-    const [confidentialityContractValue, setConfidentialityContractValue] = useState(true);
+    const registerContractTitle = "";
+    const registerContractBody = "";
 
-    const handleRegisterContractChange = () => {
-        setRegisterContractValue((prev) => !prev);
+    const privacyPolicyTitle = "";
+    const privacyPolicyBody = "";
+
+    const illuminationTextTitle = "";
+    const illuminationTextBody = "";
+
+    const [isRegisterContractModalOpen, setIsRegisterContractModalOpen] = useState<boolean>(false);
+    const [isPrivacyPolicyModalOpen, setIsPrivacyPolicyModalOpen] = useState<boolean>(false);
+    const [isIlluminationTextModalOpen, setIsIlluminationTextModalOpen] = useState<boolean>(false);
+
+    const registerContractModalRef = useRef<HTMLDivElement>(null);
+    const privacyPolicyModalRef = useRef<HTMLDivElement>(null);
+    const illuminationTextModalRef = useRef<HTMLDivElement>(null);
+
+    const handleRegisterContractOpen = () => {
+        setIsRegisterContractModalOpen(true);
     };
 
-    const handleConfidentialityContractChange = () => {
-        setConfidentialityContractValue((prev) => !prev);
+    const handleRegisterContractClose = () => {
+        setIsRegisterContractModalOpen(false);
     };
-    
+
+    const handlePrivacyPolicyOpen = () => {
+        setIsPrivacyPolicyModalOpen(true);
+    };
+
+    const handlePrivacyPolicyClose = () => {
+        setIsPrivacyPolicyModalOpen(false);
+    };
+
+    const handleIlluminationTextOpen = () => {
+        setIsIlluminationTextModalOpen(true);
+    };
+
+    const handleIlluminationTextClose = () => {
+        setIsIlluminationTextModalOpen(false);
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleOutsideClick);
+        return () => {
+          document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, []);
+
+    const handleOutsideClick = (e: MouseEvent) => {
+        if (registerContractModalRef.current && !registerContractModalRef.current.contains(e.target as Node)) {
+            handleRegisterContractClose();
+        }
+        if (privacyPolicyModalRef.current && !privacyPolicyModalRef.current.contains(e.target as Node)) {
+            handlePrivacyPolicyClose();
+        }
+        if (illuminationTextModalRef.current && !illuminationTextModalRef.current.contains(e.target as Node)) {
+            handleIlluminationTextClose();
+        }
+    };
 
     const firstNameRef = useRef<HTMLInputElement>(null);
     const lastNameRef = useRef<HTMLInputElement>(null);
@@ -121,7 +168,30 @@ const RegisterForm: React.FC = () => {
                 
                 />
                 <span className="text-xs text-gray-700">
-                    <button type="button" onClick={ handleRegisterContractChange } className="text-purple-500 font-semibold">Üyelik sözleşmesini</button> ve <button type="button" onClick={ handleConfidentialityContractChange } className="text-purple-500 font-semibold">gizlilik politikasını</button> okudum kabul ediyorum.
+                    <button 
+                        type="button" 
+                        className="text-purple-500 font-semibold"
+                        onClick={ handleRegisterContractOpen }
+                        >
+                            Üyelik sözleşmesini
+                    </button> 
+                    ,&nbsp;
+                    <button 
+                        type="button"                     
+                        className="text-purple-500 font-semibold"
+                        onClick={ handlePrivacyPolicyOpen }
+                    >
+                        gizlilik politikasını
+                    </button> 
+                    &nbsp;ve&nbsp; 
+                    <button 
+                        type="button" 
+                        className="text-purple-500 font-semibold"
+                        onClick={ handleRegisterContractOpen }
+                        >
+                            aydınlatma metnini
+                    </button> 
+                    okudum, kabul ediyorum.
                 </span>
                 <br/>
                 <span className="text-sm text-red-500"></span>
@@ -133,16 +203,29 @@ const RegisterForm: React.FC = () => {
                 <a href="/auth/login" className="text-sm text-purple-500 font-semibold">Zaten Bir Hesabım Var</a>
             </div>
         </form>
-        <Modal 
-            title="Üyelik Sözleşmesi"
-            body=""
-            visibility={registerContractValue}
-        />
-        <Modal 
-            title="Gizlilik Politikası"
-            body=""
-            visibility={confidentialityContractValue}
-        />
+        {isRegisterContractModalOpen &&
+            <Modal 
+                title={ registerContractTitle }
+                body={ registerContractBody }
+                modalRef={ registerContractModalRef }
+            />
+        }
+
+        {isPrivacyPolicyModalOpen &&
+            <Modal 
+                title={ privacyPolicyTitle }
+                body={ privacyPolicyBody }
+                modalRef={privacyPolicyModalRef}
+            />
+        }
+
+        {isIlluminationTextModalOpen &&
+            <Modal 
+                title={ illuminationTextTitle }
+                body={ illuminationTextBody }
+                modalRef={illuminationTextModalRef}
+            />
+        }
         </>
     )
 }

@@ -55,8 +55,8 @@ const RegisterForm = () => {
 
     return (
          <form onSubmit={ handleSubmit } noValidate>
-            <div className="grid grid-cols-2 gap-5">
-                <div>
+            <div className="md:grid grid-cols-2 gap-5">
+                <div className="">
                     <Input 
                         inputType="text"
                         inputPlaceholder="Ad"
@@ -65,7 +65,7 @@ const RegisterForm = () => {
                         onChange={(e: React.FormEvent<HTMLInputElement>) => handleInputChange(e, "firstName")}
                     />
                 </div>
-                <div>
+                <div className="mt-5 md:mt-0">
                     <Input 
                         inputType="text"
                         inputPlaceholder="Soyad"

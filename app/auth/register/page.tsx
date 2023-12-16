@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from 'next/types';
 import Logo from "@/components/Logo";
 import Form from "@/components/Auth/Register/Form";
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     },
 };
 
-const Register = () => {
+const Register: React.FC = () => {
     return(
         <>
         <div className="container mx-auto py-10">
@@ -22,7 +23,7 @@ const Register = () => {
                     <p className="mb-5 text-sm text-gray-700">
                         Hesap oluşturmak ücretsizdir ve yalnızca birkaç dakikanızı alır.
                     </p>
-                   <Form />
+                    <Form />
                 </div>
             </div>
         </div>

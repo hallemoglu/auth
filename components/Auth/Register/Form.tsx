@@ -2,10 +2,23 @@
 import React, { useState, useRef } from "react";
 import Input from "@/components/Textarea/Input";
 import Password from "@/components/Textarea/Password";
+import Modal from "@/components/Modal";
 import AuthService from "@/app/api/AuthService";
 
-const RegisterForm = () => {
+
+const RegisterForm: React.FC = () => {
+    const [registerContractValue, setRegisterContractValue] = useState(true);
+    const [confidentialityContractValue, setConfidentialityContractValue] = useState(true);
+
+    const handleRegisterContractChange = () => {
+        setRegisterContractValue((prev) => !prev);
+    };
+
+    const handleConfidentialityContractChange = () => {
+        setConfidentialityContractValue((prev) => !prev);
+    };
     
+
     const firstNameRef = useRef<HTMLInputElement>(null);
     const lastNameRef = useRef<HTMLInputElement>(null);
     const emailRef = useRef<HTMLInputElement>(null);
@@ -26,8 +39,6 @@ const RegisterForm = () => {
     
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-
-        alert("1");
 
         const { firstName, lastName, email, password, passwordConfirm } = formData;
 
@@ -54,6 +65,7 @@ const RegisterForm = () => {
     };
 
     return (
+        <>
          <form onSubmit={ handleSubmit } noValidate>
             <div className="md:grid grid-cols-2 gap-5">
                 <div className="">
@@ -109,7 +121,7 @@ const RegisterForm = () => {
                 
                 />
                 <span className="text-xs text-gray-700">
-                    <a href="#" className="text-purple-500 font-semibold">Üyelik sözleşmesini</a> ve <a href="#" className="text-purple-500 font-semibold">gizlilik politikasını</a> okudum kabul ediyorum.
+                    <button type="button" onClick={ handleRegisterContractChange } className="text-purple-500 font-semibold">Üyelik sözleşmesini</button> ve <button type="button" onClick={ handleConfidentialityContractChange } className="text-purple-500 font-semibold">gizlilik politikasını</button> okudum kabul ediyorum.
                 </span>
                 <br/>
                 <span className="text-sm text-red-500"></span>
@@ -121,6 +133,17 @@ const RegisterForm = () => {
                 <a href="/auth/login" className="text-sm text-purple-500 font-semibold">Zaten Bir Hesabım Var</a>
             </div>
         </form>
+        <Modal 
+            title="Üyelik Sözleşmesi"
+            body=""
+            visibility={registerContractValue}
+        />
+        <Modal 
+            title="Gizlilik Politikası"
+            body=""
+            visibility={confidentialityContractValue}
+        />
+        </>
     )
 }
 

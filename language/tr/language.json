@@ -1,0 +1,126 @@
+{
+    "title": [
+        {
+            "register": "Kayıt Ol",
+            "registerDescription": "Hesap oluşturmak ücretsizdir ve yalnızca birkaç dakikanızı alır.",
+            "login": "Giriş Yap",
+            "verifyAccount": "Hesap Doğrula",
+            "forgotPassword": "Şifremi Unuttum",
+            "resetPassword": "Şifre Sıfırla"
+        }
+    ],
+
+    "input": [
+        {
+            "firstName": "Ad",
+            "lastName": "Soyad",
+            "email": "E-Posta Adresi",
+            "password": "Şifre",
+            "passwordConfirm": "Şifrem Onay",
+            "newPassword": "Yeni Şifre",
+            "newPasswordConfirm": "Yeni Şifre Onay"
+        }
+    ],
+
+    "button": [
+        {
+            "register": "Kayıt Ol",
+            "login": "Giriş Yap",
+            "verifyAccount": "Giriş Yap",
+            "forgotPassword": "Şifre Sıfırlama Bağlantısı Gönder",
+            "resetPassword": "Şifremi Sıfırla",
+            "registerLink": "Yeni Bir Hesab Oluştur",
+            "loginLink": "Zaten Bir Hesabım Var",
+            "forgotPasswordLink": "Şifremi Unuttum"
+        }
+    ],
+
+    "error": [
+        {
+            "title": "Hata!",
+            "message": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+        }
+    ],
+
+    "setting": [
+        {
+            "title": "MoonArt",
+            "slogan": "Verimlilik, Güvenilirlik, İnovasyon",
+            "description": "",
+            "keywords": "",
+            "logo": "/images/logo/logo.png"    
+        }
+    ],
+
+    "link": [
+        {
+            "home": "/",
+            "register": "/auth/register",
+            "login": "/auth/login",
+            "forgotPassword": "/auth/forgot-password",
+            "verifyAccount": "/auth/verify-account/",
+            "resetPassword": "/auth/reset-password/"   
+        }
+    ],
+
+    "policy": [
+        {
+            "registerPolicy": "Üyelik sözleşmesini",
+            "privacyPolicy": "gizlilik politikasını",
+            "informationText": "aydınlatma metnini",
+            "and": "ve",
+            "iHaveReadAndAccept": "okudum ve kabul ediyorum.",
+            "registerPolicyModalTitle": "Üyelik Sözleşmesi",
+            "registerPolicyModalText": "<h3 class='text-md font-semibold mt-5'>1. Taraflar</h3><p>Bu sözleşme, bir tarafta WebBizBazaar.com ('Site') ve diğer tarafta bu sözleşmeyi kabul eden kullanıcı ('Üye') arasında aşağıdaki şartlar çerçevesinde düzenlenmiştir. </p><h3 class='text-md font-semibold mt-5'>2. Sözleşme Konusu</h3><p>Bu sözleşmenin konusu, Üye'nin Site üzerinden elektronik ticaret yapabilmesi için gerekli olan şartları belirlemektir. Üye, Site'ye üye olmak ve bu sözleşmeyi kabul etmekle, Site'nin belirlediği şartlara uyacağını kabul ve taahhüt eder. </p><h3 class='text-md font-semibold mt-5'>3. Üyelik Koşulları</h3><p>3.1. Üye olabilmek için, Site'nin üyelik formunu doldurmak ve gerekli bilgileri doğru ve eksiksiz olarak vermek gereklidir. </p><p>3.2. Üye, üyelik işlemlerini tamamladıktan sonra oluşturulan kullanıcı adı ve şifresinin güvenliğinden kendisi sorumludur. Üye, kullanıcı adı ve şifresini başka kişilerle paylaşmamalıdır. </p><p>3.3. Üye, Site üzerinden gerçekleştirdiği işlemlerde geçerli olan yasal mevzuata ve iş bu sözleşmeye uymakla yükümlüdür. </p><h3 class='text-md font-semibold mt-5'>4. Ürün ve Hizmetler</h3><p>4.1. Site üzerinden sunulan ürün ve hizmetlerin fiyatları, özellikleri ve satış koşulları Site üzerinde belirtilmiştir. Üye, bu koşulları kabul ederek alışveriş yapmayı taahhüt eder. </p><h3 class='text-md font-semibold mt-5'>5. Gizlilik Politikası</h3><p>5.1. Üye, Site'nin gizlilik politikasını kabul eder ve kişisel verilerinin bu politikaya uygun olarak kullanılmasına onay verir. </p><h3 class='text-md font-semibold mt-5'>6. Sorumluluklar</h3><p>6.1. Site, teknik sorunlar veya hizmet aksaklıkları nedeniyle Üye'nin uğrayabileceği zararlardan sorumlu değildir. </p><p>6.2. Üye, Site üzerinden yaptığı işlemlerde doğru ve güncel bilgileri kullanmakla yükümlüdür. Yanlış veya eksik bilgi verilmesi durumunda doğacak zararlardan Üye sorumludur. </p><h3 class='text-md font-semibold mt-5'>7. İletişim</h3><p>7.1. Üye, Site ile iletişim kurmak için info@webbizbazaar.com adresini kullanabilir. </p><h3 class='text-md font-semibold mt-5'>8. Değişiklikler</h3><p>8.1. Site, bu sözleşmede her zaman değişiklik yapma hakkını saklı tutar. Değişiklikler, Site üzerinden yayınlanarak geçerlilik kazanır. </p><h3 class='text-md font-semibold mt-5'>9. Kabul Edilmesi</h3><p>Üye, bu sözleşmeyi kabul etmekle, Site'nin belirlediği şartlara uyacağını kabul ve taahhüt eder.</p>",
+            "privacyPolicyModalTitle": "Gizlilik Politikası",
+            "privacyPolicyModalText": "<p>Bu gizlilik politikası, WebBizBazaar.com ('Site') tarafından işletilen e-ticaret platformunun kullanıcıları ('Üyeler') tarafından sağlanan kişisel verilerin nasıl kullanılacağı ve korunacağı hakkında bilgi vermektedir.</p><h3 class='text-md font-semibold mt-5'>1. Toplanan Kişisel Veriler</h3><p>1.1. Site, Üyeler tarafından sağlanan kişisel verileri (ad, soyad, e-posta adresi, telefon numarası, adres gibi) işlemektedir. </p><p>1.2. Site, Üyeler tarafından sağlanan kişisel verileri, Üyelik Sözleşmesi'nde belirtilen amaçlar doğrultusunda kullanmaktadır. </p><h3 class='text-md font-semibold mt-5'>2. Kişisel Verilerin Kullanımı</h3><p>2.1. Site, Üyelerin kişisel verilerini, Üyelik Sözleşmesi'nde belirtilen hizmetlerin sağlanması, ürünlerin satışı, iletişim, pazarlama faaliyetleri ve yasal yükümlülüklerini yerine getirmek için kullanmaktadır. </p><h3 class='text-md font-semibold mt-5'>3. Kişisel Verilerin Korunması</h3><p>3.1. Site, Üyelerin kişisel verilerini güvende tutmak için gerekli teknik ve idari önlemleri almaktadır. </p><p>3.2. Site, Üyelerin kişisel verilerini üçüncü şahıslarla paylaşmamaktadır, ancak yasal zorunluluklar veya yetkili makamların talepleri doğrultusunda paylaşma hakkını saklı tutar. </p><h3 class='text-md font-semibold mt-5'>4. Çerezler</h3><p>4.1. Site, çerezler kullanarak Üyelerin Site'yi nasıl kullandığını analiz etmekte ve Site'yi daha iyi hale getirmek için çerezleri kullanmaktadır. </p><p>4.2. Üyeler, tarayıcı ayarlarından çerezleri reddedebilir veya çerez kullanımı hakkında bilgilendirme alabilirler. </p><h3 class='text-md font-semibold mt-5'>5. Değişiklikler</h3><p>5.1. Site, bu gizlilik politikasını her zaman değiştirme hakkını saklı tutar. Değişiklikler, Site üzerinden yayınlanarak geçerlilik kazanır. </p><h3 class='text-md font-semibold mt-5'>6. Kabul Edilmesi</h3><p>Bu gizlilik politikasını kabul etmek, Site'nin belirlediği şartlara uyacağınızı kabul ve taahhüt ettiğiniz anlamına gelir. </p>",
+            "informationModalTitle": "Kişisel Verilerin Korunması Aydınlatma Metni",
+            "informationModalText": "<h3 class='text-md font-semibold mt-5'>1. Veri Sorumlusu<h3><p>Bu metinde, webbizbazaar.com olarak ('biz', 'bizim' veya 'sayfa sahibi' olarak da anılacaktır) kişisel verilerinizin işlenmesi ile ilgili sizinle paylaşmak istediğimiz bilgileri bulabilirsiniz. </p><h3 class='text-md font-semibold mt-5'>2. Kişisel Verilerin İşlenme Amacı<h3><p>Kişisel verileriniz, hizmetlerimizi sunmak, iyileştirmek ve geliştirmek, kullanıcı deneyiminizi kişiselleştirmek, güvenliği sağlamak, yasal yükümlülüklerimizi yerine getirmek ve pazarlama iletişimlerimizi göndermek gibi amaçlarla işlenebilir. </p><h3 class='text-md font-semibold mt-5'>3. Toplanan Kişisel Veriler<h3><p>Adınız, soyadınız, e-posta adresiniz, telefon numaranız, adresiniz gibi kimlik bilgileriniz, kullanıcı adı, şifre gibi giriş bilgileriniz, IP adresi gibi teknik bilgileriniz ve çerezler aracılığıyla toplanan diğer veriler. </p><h3 class='text-md font-semibold mt-5'>4. Kişisel Verilerin Paylaşılması<h3><p>Kişisel verileriniz, yasal yükümlülüklerimizi yerine getirmek, hizmetlerimizi sunmak için iş ortaklarımızla paylaşılabilir. Ayrıca, hizmetlerimizi iyileştirmek ve pazarlama iletişimlerimizi göndermek amacıyla da kullanılabilir. </p><h3 class='text-md font-semibold mt-5'>5. Kişisel Verilerin Güvenliği<h3><p>Kişisel verilerinizin güvenliği için gerekli önlemleri almak için çaba gösteriyoruz. Ancak, internet üzerinden iletilen verilerin tam güvenliği garanti edilemez. </p><h3 class='text-md font-semibold mt-5'>6. Kişisel Verilere Erişim ve Güncelleme<h3><p>Kişisel verilerinize erişme, düzeltme ve silme hakkına sahipsiniz. Bu haklarınızı kullanmak için bizimle iletişime geçebilirsiniz. </p><h3 class='text-md font-semibold mt-5'>7. Çerezler<h3><p>Çerezler, web sitemizi daha etkin bir şekilde kullanmanıza yardımcı olmak için kullanılır. Çerezler hakkında daha fazla bilgi için Çerez Politikamızı ziyaret edebilirsiniz. </p><h3 class='text-md font-semibold mt-5'>8. Değişiklikler<h3><p>Bu aydınlatma metni zaman zaman güncellenebilir. Güncel versiyonu web sitemizde yayınlayarak size bildireceğiz. </p><h3 class='text-md font-semibold mt-5'>9. İletişim<h3><p>Kişisel verilerinizle ilgili herhangi bir sorunuz varsa, lütfen bizimle iletişime geçmekten çekinmeyin: info@webbizbazaar.com</p><h3 class='text-md font-semibold mt-5'>10. Kabul Edilmesi<h3><p>Bu aydınlatma metnini kabul etmek, kişisel verilerinizin bu şekilde işlenmesine onay verdiğiniz anlamına gelir. </p>",
+            "targetedCookiesTitle": "Hedef Amaçlı Tanımlama Bilgileri",
+            "targetedCookiesText": "Bu tanımlama bilgileri, sitemizde reklam ortaklarımız tarafından ayarlanır. Bunlar, ilgili şirketler tarafından ilgi alanları profilinizi oluşturmak ve diğer sitelerde alakalı reklamlar göstermek için kullanılabilir. Benzersiz olarak tarayıcınızı ve cihazınızı belirleyerek çalışırlar. Bu tanımlama bilgilerine izin vermezseniz farklı sitelerde size özel reklam deneyimi sunamayız.<br/><a href='#' className='text-orange-500'>Tanımlama Bilgileri Ayrıntıları</a>",
+            "mandatoryCookiesTitle": "Zorunlu Tanımlama Bilgileri",
+            "mandatoryCookiesText": "Bu tanımlama bilgileri, web sitesinin çalışması için gereklidir ve sistemlerimizde kapatılamaz. Bunlar genellikle yalnızca sizin işlemlerinizi gerçekleştirmek için ayarlanmıştır. Bu işlemler, gizlilik tercihlerinizi belirlemek, oturum açmak veya form doldurmak gibi hizmet taleplerinizi içerir. Tarayıcınızı, bu tanımlama bilgilerini engelleyecek veya bunlar hakkında sizi uyaracak şekilde ayarlayabilirsiniz ancak bu durumda sitenin bazı bölümleri çalışmayabilir.br/><a href='#' className='text-orange-500'>Tanımlama Bilgileri Ayrıntıları</a>",
+            "functionalCookiesTitle": "İşlevsel Tanımlama Bilgileri",
+            "functionalCookiesText": "Bu tanımlama bilgileri, videolar ile canlı sohbet gibi gelişmiş işlevler ve kişiselleştirme olanağı sunabilmemizi sağlar. Bunlar, bizim tarafımızdan veya sayfalarımızda hizmetlerinden faydalandığımız üçüncü taraf sağlayıcılarca ayarlanabilir. Bu tanımlama bilgilerine izin vermezseniz bu işlevlerden tümü veya bazıları doğru şekilde çalışmayabilir.br/><a href='#' className='text-orange-500'>Tanımlama Bilgileri Ayrıntıları</a>",
+            "professionalCookiesTitle": "Profesyonel Tanımlama Bilgileri",
+            "professionalCookiesText": "Bu tanımlama bilgileri, sitemizin performansını ölçebilmemiz ve iyileştirebilmemiz için sitenin ziyaret edilme sayısını ve trafik kaynaklarını sayabilmemizi sağlar. Hangi sayfaların en fazla ve en az ziyaret edildiğini ve ziyaretçilerin sitede nasıl gezindiklerini öğrenmemize yardımcı olurlar. Bu tanımlama bilgilerinin topladığı tüm bilgiler derlenir ve bu nedenle anonimdir. Bu tanımlama bilgilerine izin vermezseniz sitemizi ne zaman ziyaret ettiğinizi bilemeyiz.br/><a href='#' className='text-orange-500'>Tanımlama Bilgileri Ayrıntıları</a>"
+        }
+    ],
+
+    "accordion": [
+        {
+            
+        }
+    ],
+
+    "cookie": [
+        {
+            "cookieTitle": "Daha iyi bir deneyim için izninizi istiyoruz.",
+            "cookieMessage": "İnternet sitemizde deneyimlerinizi kişiselleştirmek amacıyla çerezler kullanılmakta olup, izin vermeniz halinde zorunlu çerezler haricindeki çerezlerle toplanan veriler işlenmekte ve tüm çerezler yurt dışında yerleşik altyapı tedarikçilerimize aktarılmaktadır. Çerez ayarlarından reddet seçeneğine tıklamanız halinde tercih ve ilgi alanlarına yönelik maalesef size özel bir deneyim sunamayacağız. Çerezler bakımından kişisel tercihlerinizi, seçeneklerde yer alan çerez ayarları kısmından yönetebilir, çerezlerle ilgili detaylı bilgiye buradan ulaşabilirsiniz: <a href='https://yardim.webbizbazaar.com' class='font-semibold underline-offset-1 text-orange-500'>Çerez Politikası</a>",
+            "cookieSettingButton": "Çerez Ayarları",
+            "cookieApplyButton": "Kabul Et",
+            "cookieRejectionButton": "Çerez Ayarlarını Reddet",
+            "cookieSettingApplyButton": "Çerez Ayarlarını Kaydet",
+            "cookieSettingTitle": "Çerez Politikası",
+            "cookieSettingText": "Herhangi bir web sitesini ziyaret ettiğinizde site, tarayıcınızdan genellikle tanımlama bilgileri biçiminde olmak üzere bilgiler alabilir veya depolayabilir. Bu bilgiler; siz, tercihleriniz ya da cihazınız hakkında olabilir veya siteyi beklediğiniz şekilde çalıştırmak üzere kullanılabilir. Bilgiler çoğunlukla sizi doğrudan tanımlamaz ancak size daha kişiselleştirilmiş bir web deneyimi sunabilir. Bazı tanımlama bilgisi türlerine izin vermemeyi seçebilirsiniz. Daha fazla bilgi edinmek ve varsayılan ayarlarımızı değiştirmek için farklı kategori başlıklarına tıklayın. Bununla birlikte, bazı tanımlama bilgisi türlerini engellediğinizde site deneyiminiz ve sunabildiğimiz hizmetler bu durumdan etkilenebilir.<p class='mt-2'><a href='https://yardim.webbizbazaar.com' class='font-semibold text-orange-500'>Daha Fazla Bilgi</a></p>",
+            "cookieSettingAllApplyButton": "Tümünü Kabul Et",
+            "cookieSettingManageApprovalPreferencesTitle": "Onay Tercihlerini Yönet"
+        }
+    ],
+
+    "icon": [
+        {
+            "leftArrowText": "Geri Dön"
+        }
+    ],
+
+    "otherPlatform": [
+        {
+            "title": "Sosyal medya hesabıları ile giriş yap",
+            "text": "Google, facebook veya apple hesabınızı kullanarak giriş yapabilirsiniz.",
+            "google": "Google ile giriş yap",
+            "apple": "Apple ile giriş yap",
+            "facebook": "Facebook ile giriş yap"
+        }
+    ]
+}

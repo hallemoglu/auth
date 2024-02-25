@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --backgroundColor: "#f1f1f1" !important;
+  --fontFamily: "Poppins", sans-serif !important;
+  --primaryColor: "#ff7f00";
+}
+
+*{
+  font-family: var(--fontFamily);
+}
+
+body {
+  background-color: rgb(241, 245, 249);
+}
+
+.sidebar {
+  z-index: 9999;
+}
+.dashboard-card {
+  z-index: -1;
+}
+
+/* width */
+#modal ::-webkit-scrollbar {
+  width: 5px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* Track */
+#modal ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+#modal ::-webkit-scrollbar-thumb {
+  background: #2c3e50;
+  border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+#modal ::-webkit-scrollbar-thumb:hover {
+  background: #2c3e50;
+}
+
+.button-color {
+  background-color: var(--primaryColor);
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  background-color: #ccc;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-checked {
+  background-color: #38a169;
+}
+
+.toggle.checked::after {
+  transform: translateX(1.5rem);
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600" viewBox="0 0 1500 600">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 260px;
+        font-family: "Saira Stencil One";
+      }
+    </style>
+  </defs>
+  <text id="MoonArt" class="cls-1" transform="translate(2.324 388.152) scale(1.384)">MoonArt</text>
+</svg>
